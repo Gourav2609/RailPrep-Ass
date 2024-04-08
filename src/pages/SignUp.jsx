@@ -58,18 +58,15 @@ const SignUp = () => {
         console.log("Registration response:", data);
         if (data.success) {
           console.log("Registration successful");
-          // Save token as session cookie
-          // Redirect
+          
           navigate("/login");
         } else {
           console.error("Registration failed:", data.error);
-          // Handle registration error
-          // For example, display an error message to the user
+          
         }
       })
       .catch((error) => {
         console.error("Error:", error);
-        // Handle network or other errors
       });
   };
 

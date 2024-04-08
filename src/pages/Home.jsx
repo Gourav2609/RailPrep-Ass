@@ -25,7 +25,6 @@ const Home = () => {
           return response.json();
         })
         .then((data) => {
-          // Assuming the response data is an array of categories
           console.log("Data:", data);
           setCategories(data.data);
           console.log("Categories:", data);
